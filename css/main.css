@@ -24,7 +24,7 @@ body {
 
 .picture {
     display:grid;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 2fr 1fr;
 }
 
 .picture__article {
@@ -34,30 +34,33 @@ body {
 }
 
 .wrap{
-    max-width: 1120px;
+    max-width: 960px;
+    width:100%;
     margin:90px auto;
     grid-gap:20px;
     display:grid;
     grid-template: 
-    "picture picture block1"
-    "block2 block3 block4"
-    / 1fr 1fr 1fr;
+    "picture picture block1" 
+    "block2 block3 block4" 
+    / .5fr .5fr .5fr;
 }
 
 .item{
     min-height:540px;
     background-color: #fff;
     display:grid;
-    grid-template-rows: .75fr 1fr .25fr;
+    grid-template-rows: .85fr 1fr .15fr;
 }
 
 .img_container{
     overflow: hidden;
+    height:100%;
 }
 
 .image{
     height:100%;
     width:100%;
+    object-fit: cover;
 }
 
 .content{
