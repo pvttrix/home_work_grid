@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'HansKendrick';
+    src: url('../fonts/neuehanskendrick-regular-webfont.woff2') format('woff2'),
+    url('../fonts/neuehanskendrick-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+html{
+    font-size: 10px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e2e7ec;
+}
+
+.picture {
+    display:grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+.picture__article {
+    color:#fff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.wrap{
+    max-width: 1120px;
+    margin:90px auto;
+    grid-gap:20px;
+    display:grid;
+    grid-template: 
+    "picture picture block1"
+    "block2 block3 block4"
+    / 1fr 1fr 1fr;
+}
+
+.item{
+    min-height:540px;
+    background-color: #fff;
+    display:grid;
+    grid-template-rows: .75fr 1fr .25fr;
+}
+
+.img_container{
+    overflow: hidden;
+}
+
+.image{
+    height:100%;
+    width:100%;
+}
+
+.content{
+    padding:25px;
+    text-align: left;
+    
+}
+
+.date {
+    font-family:'HansKendrick';
+    font-weight: 600;
+    color:#a8a8a8;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.item__article {
+    font-family:'HansKendrick';
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.item_author{
+    margin:30px;
+}
+
+.author {
+    max-height:54px;
+    max-height:54px;
+    border-radius:50%;
+    width:100%;
+    margin-left: 0;
+}
+
+
+
+.picture{
+    min-height:540px;
+    background-position: center;
+    background-size: cover;
+    grid-area:picture;
+    background-image: linear-gradient(to top, rgba(0,0,0,.6) , rgba(0,0,0,0) ),url("../pictures/Layer\ 8.png");
+}
+
+.block1{
+    grid-area:block1;
+}
+
+.block2{
+    grid-area:block2;
+}
+
+.block3{
+    grid-area:block3;
+}
+
+.block4{
+    grid-area:block4;
+}
+
+
+
